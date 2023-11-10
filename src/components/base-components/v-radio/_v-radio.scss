@@ -1,0 +1,18 @@
+.v-radio {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+
+  &__input {
+    cursor: pointer;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &_reversed {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

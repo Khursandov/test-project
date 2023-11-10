@@ -1,0 +1,119 @@
+.sidebar {
+  position: fixed;
+  z-index: var(--ui-index-5);
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  padding: 10px 0;
+  background-color: lightgray;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  &__item-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: var(--border-radius-m);
+    font-weight: bold;
+
+    &_active {
+      padding: 4px;
+      border: 2px solid var(--color-black);
+    }
+  }
+
+  &__item-tooltip {
+    width: 100%;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__top-item {
+    width: 100%;
+  }
+
+  &__content {
+    height: 95%;
+    overflow-y: auto;
+  }
+
+  &__footer {
+    padding: 5px;
+    border-top: 1px solid;
+  }
+
+  &__footer-btn {
+    width: 100%;
+  }
+}
+
+.sidebar-wrapper {
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  background-color: lightgrey;
+  border-bottom-right-radius: var(--border-radius-l);
+  border-top-right-radius: var(--border-radius-l);
+  cursor: pointer;
+
+  &__arrow {
+    left: 300px;
+    width: 30px;
+    padding: 6px;
+    transform: rotate(0);
+  }
+
+  &__arrow-closed {
+    transform: rotate(180deg);
+  }
+
+  &_opened {
+    left: 300px;
+  }
+
+  &_active {
+    &::after {
+      position: absolute;
+      top: -2px;
+      left: 21px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      content: '';
+    }
+  }
+}
+
+.subtypes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: var(--border-radius-m);
+  margin-left: 10px;
+
+  &__item {
+    padding: 4px 20px;
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius-m);
+    margin: 2px;
+  }
+
+  &__active-item {
+    background-color: var(--color-primary);
+  }
+}

@@ -1,0 +1,29 @@
+.package-sale-sub-order {
+  display: flex;
+  justify-content: start;
+  padding: 15px;
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+  column-gap: 10px;
+
+  &__items {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__item {
+    padding: 10px;
+    border-radius: 15px;
+    background: #747474;
+    color: #fff;
+    cursor: pointer;
+
+    &--active {
+      background: #646cff;
+    }
+  }
+
+  &__add-btn {
+    margin: auto 0;
+  }
+}

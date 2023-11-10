@@ -1,0 +1,22 @@
+.select-block {
+  display: block;
+
+  &__label {
+    display: block;
+  }
+
+  &__select {
+    padding: 5px;
+    border-radius: 4px;
+
+    &:focus,
+    &:hover {
+      border-color: #646cff;
+      outline-color: #646cff;
+    }
+  }
+
+  &__option {
+    display: block;
+  }
+}

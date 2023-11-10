@@ -1,0 +1,10 @@
+.check-out-additional-info {
+  display: flex;
+  padding: 20px 30px;
+  border: 1px solid #f3f3f3;
+  column-gap: 30px;
+
+  &__field {
+    margin-top: auto;
+  }
+}

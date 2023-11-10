@@ -1,0 +1,16 @@
+@import 'src/assets/scss/core/mixins';
+
+.v-button {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

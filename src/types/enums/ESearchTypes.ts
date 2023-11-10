@@ -1,0 +1,8 @@
+export enum ESearchTypes {
+  NAME = 'NAME',
+  CODE = 'CODE',
+  PRODUCT_ID = 'PRODUCT_ID',
+  RESULT_NUMBER = 'RESULT_NUMBER',
+  PRICE = 'PRICE',
+  PROPERTIES = 'PROPERTIES'
+}

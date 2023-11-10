@@ -1,0 +1,21 @@
+.v-table {
+  overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+
+  &__tr {
+    border: 1px solid #ecf0f1;
+  }
+
+  &__th {
+    padding: 10px;
+    border-left: 1px solid #ecf0f1;
+    font-weight: 700;
+  }
+
+  &__td {
+    padding: 10px;
+    border-left: 1px solid #ecf0f1;
+  }
+}

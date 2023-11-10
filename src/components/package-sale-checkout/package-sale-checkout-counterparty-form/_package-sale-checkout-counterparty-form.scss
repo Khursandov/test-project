@@ -1,0 +1,18 @@
+.check-out-counterparty-form {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__action {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    column-gap: 20px;
+  }
+}

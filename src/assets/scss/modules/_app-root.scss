@@ -1,0 +1,17 @@
+#app {
+  display: flex;
+  width: 100%;
+  height: var(--app-holder-height);
+  flex-direction: column;
+}
+
+.app-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__container {
+    margin: 0 auto;
+  }
+}

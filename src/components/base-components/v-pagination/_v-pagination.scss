@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+
+  &__container {
+    display: flex;
+    margin-right: 5px;
+  }
+
+  &__item {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius-m);
+    background-color: var(--color-gray-2) !important;
+    list-style-type: none;
+
+    &_break {
+      background-color: var(--color-white);
+
+      &:hover {
+        cursor: default;
+      }
+    }
+
+    &_selected {
+      background-color: var(--color-black) !important;
+      color: var(--color-white);
+    }
+
+    &:not(last-child) {
+      margin-left: 14px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

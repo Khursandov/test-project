@@ -1,0 +1,32 @@
+.package-sale-checkout-copy-menu {
+  position: relative;
+
+  &__wrapper {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: max-content;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+    background: #fff;
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+  }
+
+  &__list {
+    max-height: 130px;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+  }
+
+  &__item {
+    padding: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background: beige;
+    }
+  }
+}

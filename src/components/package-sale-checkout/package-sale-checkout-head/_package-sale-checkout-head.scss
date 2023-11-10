@@ -1,0 +1,15 @@
+.package-sale-check-out-head {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 13px;
+  margin: 30px 0;
+
+  &__counterparty {
+    display: flex;
+    column-gap: 5px;
+  }
+
+  &__action {
+    margin-top: auto;
+  }
+}

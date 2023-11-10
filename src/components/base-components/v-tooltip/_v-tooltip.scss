@@ -1,0 +1,29 @@
+.tooltip {
+  position: relative;
+  display: flex;
+}
+
+.tooltip__content {
+  position: absolute;
+  z-index: 999;
+  bottom: 110%;
+  left: 50%;
+  display: inline-block;
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--color-secondary);
+  color: black;
+  font-size: 12px;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+.tooltip__content-right {
+  bottom: 0;
+  left: 50%;
+}
+
+.tooltip:hover .tooltip__content {
+  visibility: visible;
+}
